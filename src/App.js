@@ -1,13 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Layout from './Components/Layout';
 import './App.css';
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import Home from './Components/Homepage/Home';
+import Spinner from './Components/spinner/spinner';
 
 function App() {
   return (
     <div className="App">
-      E Services
-      <FontAwesomeIcon icon={faHome}/>
-      <button className='btn btn-outline-dark'>Click</button>
+      <Home />
     </div>
   );
 }

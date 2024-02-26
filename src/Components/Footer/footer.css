@@ -1,0 +1,19 @@
+.footer-container{
+    background-color: black;
+    padding: 2.5%  5% 1% 5%;
+    color: white;
+}
+
+.logo{
+    height: 30%;
+    width: 20%;
+}
+
+.icon{
+    cursor: pointer;
+    margin:2% 3%;
+    color: white;
+    &:hover{
+        color: rgb(255, 230, 0);
+    }
+}

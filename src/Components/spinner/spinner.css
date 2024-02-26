@@ -1,0 +1,59 @@
+.parent {
+    position: relative;
+    margin-top: 15%;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    z-index: 2;
+    background: transparent;
+}
+
+.outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    z-index: 1;
+    background: transparent;
+    animation: spinner 2.5s infinite linear;
+}
+
+.loading {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    animation: loading 2.5s infinite;
+
+    &::after {
+        content: "";
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: 50.5%;
+        left: 50.5%;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    50% {
+        content: "..";
+    }
+
+    100% {
+        content: "...";
+    }
+}
