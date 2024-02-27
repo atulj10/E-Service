@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
+import logo from '../../Assets/Logo.png'
 
 const Navbar = () => {
     const [scroll,setScroll]=useState(false)
@@ -14,13 +15,13 @@ const Navbar = () => {
     }
 
     return (
-        <nav className={`navbar navbar-expand-lg ${scroll? "bg-dark border-bottom border-body" :"border-bottom bg-body-outline"} position-fixed w-100 z-1  `} data-bs-theme={`${scroll && "dark"}`}>
+        <nav className={`navbar navbar-expand-lg ${scroll? "bg-dark  border-body" :" bg-body-outline"} position-fixed w-100 z-1  `} data-bs-theme={`${scroll && "dark"}`}>
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a className="navbar-brand" href="#">Hidden brand</a>
+                    <a className="navbar-brand" href="#"><img src={logo} height={"60px"}/></a>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Home</a>

@@ -1,37 +1,499 @@
-.label{
+.label {
+    position: relative;
     height: 10%;
     width: 100%;
     object-fit: cover;
+    filter: brightness(60%);
 }
 
-.blackground {
-    opacity: 0;
+.box {
     position: absolute;
-    top: 51.3%;
-    background-image: linear-gradient(transparent, rgb(63, 63, 63));
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(168, 166, 166);
+    padding: 20% 0 0 0;
+    backdrop-filter: blur(4px);
+    transition: box-shadow 0.4s, transform 0.3s;
+
+    /* &:hover {
+        box-shadow: 20px -20px 49px #a6a6a6,
+            -20px 20px 49px #a6a6a6;
+        transform: scale(1.03);
+        backdrop-filter: blur(10px);
+    } */
 }
 
-.card-body {
-    opacity: 0;
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
     position: absolute;
-    top: 51.3%;
-    background-image: linear-gradient(transparent, rgb(63, 63, 63));
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+/* ===============================================================
+   =============================================================== */
+.features {
+    padding: 0 2%;
+    margin: 20% 0;
+}
+
+.image-container {
+
+    &:hover {
+        .image {
+            transform: scale(1.1);
+            filter: brightness(90%);
+            box-shadow: 10px 10px 20px gray;
+            filter: grayscale(0);
+        }
+
+        .readmore {
+            transform: scale(1.1);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .arrow {
+            left: 185px;
+        }
+    }
+}
+
+
+.image {
+    filter: brightness(45%);
+    padding: 0 0%;
+    transition: all 0.5s;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.arrow {
+    position: absolute;
+    left: 170px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+
+.readmore {
+    border: none;
+    background: transparent;
+    position: absolute;
+    padding: 0;
+    top: 320px;
+    left: 30px;
+    z-index: 100;
+    font-size: 1.5rem;
+    color: rgb(168, 168, 168);
+    transition: all 0.2s;
+}
+
+.animation{
+    animation: comein-feature 1.5s ease-in-out;
+}
+
+
+/* ========================================================
+   ======================================================== */
+
+/*bg*/
+/*txt*/
+/*success*/
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    top: 20px;
+    left: 20px;
+}
+
+.buttons button {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    margin: 20px;
+    color: #568fa6;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.buttons button:before,
+.buttons button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #44d8a4;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button:after {
+    left: 0;
+    bottom: 0;
+}
+
+.buttons button span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.buttons button span:before,
+.buttons button span:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: #44d8a4;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button span:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button span:after {
+    left: 0;
+    bottom: 0;
+}
+
+.buttons button p {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons button p:before,
+.buttons button p:after {
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    z-index: 1;
+    left: 0;
+}
+
+.buttons button p:before {
+    content: attr(data-title);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buttons button p:after {
+    content: attr(data-text);
+    top: 150%;
+    color: #44d8a4;
+}
+
+.buttons button:hover:before,
+.buttons button:hover:after {
+    width: 100%;
+}
+
+.buttons button:hover span {
+    z-index: 1;
+}
+
+.buttons button:hover span:before,
+.buttons button:hover span:after {
+    height: 100%;
+}
+
+.buttons button:hover p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.buttons button:hover p:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buttons button.start {
+    background-color: #44d8a4;
+    box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.buttons button.start p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.buttons button.start p:after {
     color: white;
-    padding: 8%;
-    transition: opacity 0.5s;
+    transition: all 0s ease;
+    content: attr(data-start);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: start 0.3s ease;
+    animation-fill-mode: forwards;
 }
 
-img{
-    height: 500px;
+@keyframes start {
+    from {
+        top: -50%;
+    }
 }
+
+.buttons button.start:hover:before,
+.buttons button.start:hover:after {
+    display: none;
+}
+
+.buttons button.start:hover span {
+    display: none;
+}
+
+.buttons button:active {
+    outline: none;
+    border: none;
+}
+
+.buttons button:focus {
+    outline: 0;
+}
+
+.line {
+    margin-top: 7%;
+    height: 5px;
+    width: 60%;
+    align-self: center;
+    background-color: #11235A;
+    border-radius: 100px;
+    box-shadow: 10px 10px 20px gray,
+        -10px -10px 20px gray;
+}
+
+/* ===========================================================================
+=========================================================================== */
+
 
 .card {
+    margin: 10%;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 5rem 15rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
 
-    transition: transform 0.5s;
     &:hover {
-        transform: scale(1.05);
-        .card-body {
-            opacity: 1;
+
+        .text-title,
+        .text-body {
+            text-shadow: 5px 5px 10px gray;
         }
+    }
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #11235A;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+/*Text*/
+.text-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+/*Hover*/
+.card:hover {
+    border-color: #11235A;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+
+/* ==========================================================================================
+========================================================================================== */
+
+.project-container {
+    height: 60%;
+    width: 100%;
+    padding: 10% 0 0 0;
+    align-self: center;
+    text-align: center;
+}
+
+.project-title {
+    margin: 2% 0 10% 0;
+    text-shadow: 10px 10px 10px grey;
+    font-size: 5rem;
+}
+
+.carousal-image {
+    filter: brightness(40%);
+}
+
+.carousal-content {
+    position: absolute;
+    bottom: 30%;
+    color: white;
+    left: 35%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5% 10%;
+}
+
+
+
+
+/* ==========================================================================================
+========================================================================================== */
+
+.service-title {
+    text-shadow: 10px 10px 10px grey;
+    font-size: 5rem;
+}
+
+.text-shadow {
+    text-shadow: 5px 5px 10px grey;
+    color: #11235A;
+}
+
+.services-content {
+    padding: 2% 10%;
+}
+
+.services-p {
+    font-size: 1.5rem;
+}
+
+
+/* ===========================================================================
+=========================================================================== */
+
+
+.career-title {
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 10px 10px 10px grey;
+    margin-bottom: 5%;
+}
+
+.career-content {
+    padding: 0 25%;
+    font-size: 1.5rem;
+}
+
+
+/* ================================================================================================
+================================================================================================ */
+
+@keyframes comein-feature {
+    0%{
+        opacity: 0;
+        top:0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }
