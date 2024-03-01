@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     return (
         <div className='d-flex flex-column flex-1 '>
             <Navbar />
-            <main style={{ minHeight: "89.3vh" }}>
+            <main  style={{ minHeight: "89.3vh"}}>
                 {children}
             </main>
             <Footer className="align-self-end" />

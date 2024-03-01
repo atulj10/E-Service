@@ -1,3 +1,39 @@
 .navbar{
+    padding: 1.5% 0;
+    display:flex;
+    justify-content: center;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-shadow: 5px 5px 10px rgba(194, 23, 23, 0.836);
+}
+
+.nav-icon {
+    opacity: 0;
+}
+
+.nav-link {
+    transition: all 0.5s;
+
+    &:hover {
+        padding: 1%;
+        .nav-name {
+            opacity: 0;
+        }
+
+        .nav-icon {
+            position: relative;
+            left: 50%;
+            opacity: 1;
+            text-shadow: 10px 10px 10px grey;
+            filter: drop-shadow(5px 5px 10px #0000ff);
+        }
+    }
+}
+
+.navbar {
     transition: all 0.4s;
 }

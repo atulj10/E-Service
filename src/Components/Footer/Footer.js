@@ -6,7 +6,7 @@ import logo from '../../Assets/Logo.png'
 
 const Footer = () => {
   return (
-    <div className='row footer-container'>
+    <div className='row footer-container mx-0'>
       <div className='col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center'>
         <img className='logo pb-2' src={logo} alt='logo-img'/>
         <h5>Goal E Services</h5>
