@@ -1,0 +1,35 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10%;
+    border-radius: 40px;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 10px 10px 30px grey;
+        .card-detail {
+            text-shadow: 5px 5px 5px grey;
+        }
+    }
+}
+
+.card-img {
+    position: relative;
+    bottom: 100px;
+    border-radius: 1000px;
+    margin-bottom: 0px;
+    width: 40%;
+    height: 30%;
+    backdrop-filter: blur(10px);
+}
+
+.card-detail {
+    background-color: antiquewhite;
+    padding: 10%;
+    border-radius: 0 0 40px 40px;
+}
+
+p {
+    font-size: 15px;
+}

@@ -1,0 +1,76 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-label {
+    filter: brightness(70%);
+}
+
+.about-testimonial {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    padding: 0 25%;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.detail-main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px;
+}
+
+/* =================================================================================
+================================================================================= */
+
+.box-comment {
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    margin: 40px;
+    float: left;
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 20px rgb(146, 146, 146);
+    }
+}
+
+.box-comment.arrow-right:after {
+    content: " ";
+    position: absolute;
+    right: -15px;
+    top: 35px;
+    border-top: 15px solid transparent;
+    border-right: none;
+    border-left: 15px solid black;
+    border-bottom: 15px solid transparent;
+}
+
+.box-comment.arrow-left:after {
+    content: " ";
+    position: absolute;
+    left: -15px;
+    top: 35px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid black;
+    border-left: none;
+    border-bottom: 15px solid transparent;
+}
+
+/* =================================================================================
+================================================================================= */
+
+.about-card-container
+{
+    padding: 0 5%;
+}

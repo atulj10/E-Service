@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Components/Homepage/Home';
 import Spinner from './Components/spinner/spinner';
 import { Route, Routes } from 'react-router-dom';
-import About from './Components/About'
+import About from './Components/About/About'
 import Contact from './Components/Contact'
 import Blog from './Components/Blog'
 import Career from './Components/Career'

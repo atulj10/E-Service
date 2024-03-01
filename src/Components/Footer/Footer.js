@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='row footer-container mx-0'>
       <div className='col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center'>
         <img className='logo pb-2' src={logo} alt='logo-img'/>
-        <h5>Goal E Services</h5>
+        <h5 style={{color:"#F5DD61"}}>Goal E Services</h5>
       </div>
 
       <div className=' text-center col-lg-4 col-md-6 col-sm-12 d-flex flex-column '>

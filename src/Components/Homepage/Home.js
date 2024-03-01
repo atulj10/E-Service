@@ -8,10 +8,10 @@ import image3 from '../../Assets/card4(home).webp'
 import image4 from '../../Assets/card5(home).webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faFileCircleCheck, faHelmetSafety, faMicrochip, faUsersGear, faWifi } from '@fortawesome/free-solid-svg-icons'
-import project1 from '../../Assets/project1.avif'
-import project2 from '../../Assets/project2.avif'
-import project3 from '../../Assets/project3.avif'
-import project4 from '../../Assets/project4.avif'
+import project1 from '../../Assets/project1.png'
+import project2 from '../../Assets/project2.png'
+import project3 from '../../Assets/project3.png'
+import project4 from '../../Assets/project4.png'
 
 
 const Home = () => {
