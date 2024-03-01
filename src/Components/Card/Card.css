@@ -9,7 +9,7 @@
         transform: scale(1.05);
         box-shadow: 10px 10px 30px grey;
         .card-detail {
-            text-shadow: 5px 5px 5px grey;
+            text-shadow: 2px 2px 10px grey;
         }
     }
 }
