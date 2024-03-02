@@ -21,7 +21,7 @@
     margin-bottom: 0px;
     width: 40%;
     height: 30%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 
 .card-detail {
