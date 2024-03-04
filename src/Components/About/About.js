@@ -16,6 +16,7 @@ const About = () => {
   const [box2, setbox2] = useState(false)
   const [box3, setbox3] = useState(false)
   const [box4, setbox4] = useState(false)
+  const [visible,setVisible]=useState(true)
 
   return (
     <Layout>
@@ -31,7 +32,7 @@ const About = () => {
         </div>
         <div className='line mb-5'></div>
         <div className='details-section'>
-          <h1 className='text-center p-5' style={{textShadow:"5px 5px 5px grey"}}>WHO ARE WE !?</h1>
+          <h1 className='text-center p-5' style={{ textShadow: "5px 5px 5px grey" }}>WHO ARE WE !?</h1>
           <div className='detail-main-section '>
             <div className='d-flex align-items-baseline'>
               <div className='box-comment arrow-right' style={{ height: `${box1 ? "" : "100px"}` }}>
@@ -64,9 +65,9 @@ const About = () => {
           </div>
         </div>
         <div className='line mb-5'></div>
-        <div>
-          <h1 className='text-center' style={{textShadow:"5px 5px 5px grey"}}>WHO WE ARE !?</h1>
-          <div className='row about-card-container'>
+        <div >
+          <h1 className='text-center' style={{ textShadow: "5px 5px 5px grey" }}>WHO WE ARE !?</h1>
+          <div className='row about-card-container' style={{ width: "100%" }}>
             <div className='col-lg-6'>
               <Card image={image1} name="Mr. Ravindra Niwariya" designation="Co-founder" email="niwariya.ravindra@goals4es.com" description="A knowledgeable, dynamic engineer, professional and expert in materials engineering at NDT Level II UT MT PT RT VT ET. He has more than 12 years of professional experience in NDT inspection, welding inspection, mechanical testing, metallography, NDT Level II responsibilities, consulting, NDT technique establishing, effective NDT procedure preparation, validation and approval, ASME NDT process audits, Aerospace NDT, ASNT &PCN Training and Certification.
                                                                                                                   He having experience in National with professionals within Project Management, Welding & Inspection, Quality Control & Assurance (RTFI, UT & PAUT, TOFD, AUT of Plate & piping Welding Joints), Visual Testing, etc.
@@ -81,16 +82,16 @@ const About = () => {
                                                                                                                   Possess excellent analytical and planning skills with abilities in leading team members and institutionalizing, developing & inculcating the quality culture through core technical expertise in national and international Standards."/>
             </div>
             <div className='col-lg-6'>
-              <Card image={image2} name="Mr. Shashvat Kumar Malviya" designation="Co-founder" email="shashvat@goals4es.com" description="A result oriented professional with 10 years of experience in Quality & Project. and HSE department. Seeking assignment in medium or big scale organization preferably in Power Plant a industry . To obtain a challenging and responsible position in an organization where my knowledge, experience, achievements and personal skills will be utilized to be a successful professional while being flexible, creative and resourceful."/>
+              <Card image={image2} name="Mr. Shashvat Kumar Malviya" designation="Co-founder" email="shashvat@goals4es.com" description="A result oriented professional with 10 years of experience in Quality & Project. and HSE department. Seeking assignment in medium or big scale organization preferably in Power Plant a industry . To obtain a challenging and responsible position in an organization where my knowledge, experience, achievements and personal skills will be utilized to be a successful professional while being flexible, creative and resourceful." />
             </div>
             <div className='col-lg-6'>
-              <Card image={image3} name="Mr. Rajesh Kumar Shukla" designation="Welding Specialist" email="rajeshshukla@goals4es.com" description="Proactive, result focused Welding engineer/Welding Inspector with 25 years of working experience within the Manufacturing Industry / Pipe manufacturing for use of OIL & GAS PIPE LINE/OIL & GAS Refineries, holding Bachelor of Mechanical Engineering & CSWIP 3.1 Level II having Excellence in welding/quality management, Team management, Client relationship & communications, root Cause analysis, preparation of progress reports.  Successfully completed CSWIP 3.1- Welding Inspector-Level 2 course from TWI, UK (Certificate no-80499/2, Valid till 10/10/2023). Successfully completed Non-Destructive Testing Level-II course in Ultrasonic testing, Radiographic testing, Visual Testing and Magnetic particle testing (UT, RT, DPT, and MPT) as per ASNT recommended practice SNT-TC-1A."/>
+              <Card image={image3} name="Mr. Rajesh Kumar Shukla" designation="Welding Specialist" email="rajeshshukla@goals4es.com" description="Proactive, result focused Welding engineer/Welding Inspector with 25 years of working experience within the Manufacturing Industry / Pipe manufacturing for use of OIL & GAS PIPE LINE/OIL & GAS Refineries, holding Bachelor of Mechanical Engineering & CSWIP 3.1 Level II having Excellence in welding/quality management, Team management, Client relationship & communications, root Cause analysis, preparation of progress reports.  Successfully completed CSWIP 3.1- Welding Inspector-Level 2 course from TWI, UK (Certificate no-80499/2, Valid till 10/10/2023). Successfully completed Non-Destructive Testing Level-II course in Ultrasonic testing, Radiographic testing, Visual Testing and Magnetic particle testing (UT, RT, DPT, and MPT) as per ASNT recommended practice SNT-TC-1A." />
             </div>
             <div className='col-lg-6'>
-              <Card image={image4} name="Mr. Anand Kumar Singh" designation="Manager Testing operational" email="anandsingh@goals4es.com" description="More than 19 years experience in Oil & Gas Industries. Expertise in handling Nondestructive Testing level (NDT Level-II and level III )activities and safety procedures. Well conversant with International Codes & Standards like ASME Sec. V, VIII Div. I, IX, B31.1, 31.3, AWS D1.1 & API . NDT Inspector & Radiation Safety Officer in INDIA and abroad works in many companies in petrol & petrochemical company for industrial support services , alpha inspection and engineering services ,m/s tanmia for oil and construction limited, total e&p yemen kharir block-10 and yemen lng balhaf, welspun gujarat stahl rohren ltd. and reliance industries ltd. jamnagar-gujarat ."/>
+              <Card image={image4} name="Mr. Anand Kumar Singh" designation="Manager Testing operational" email="anandsingh@goals4es.com" description="More than 19 years experience in Oil & Gas Industries. Expertise in handling Nondestructive Testing level (NDT Level-II and level III )activities and safety procedures. Well conversant with International Codes & Standards like ASME Sec. V, VIII Div. I, IX, B31.1, 31.3, AWS D1.1 & API . NDT Inspector & Radiation Safety Officer in INDIA and abroad works in many companies in petrol & petrochemical company for industrial support services , alpha inspection and engineering services ,m/s tanmia for oil and construction limited, total e&p yemen kharir block-10 and yemen lng balhaf, welspun gujarat stahl rohren ltd. and reliance industries ltd. jamnagar-gujarat ." />
             </div>
             <div className='col-lg-6'>
-              <Card image={image5} name="Mr. SACHIN SONI" designation=" (Sr. Inspection Engineer) / (Welding Trainer)" email="sachinsoni@goals4es.com" description=""/>
+              <Card image={image5} name="Mr. SACHIN SONI" designation=" (Sr. Inspection Engineer) / (Welding Trainer)" email="sachinsoni@goals4es.com" description="" />
             </div>
           </div>
         </div>

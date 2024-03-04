@@ -1,0 +1,68 @@
+.service-slogan {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.service-blocks {
+    width: 100%;
+    padding: 0 10%;
+}
+
+
+/* =====================================================================================
+===================================================================================== */
+
+.service-main {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    box-shadow: 5px 5px 10px rgb(168, 168, 168);
+    border-radius: 10px 10px 10px 10px;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 15px 15px 15px rgb(204, 204, 204);
+
+        .serv-icon {
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+.service-icon {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 0 40%;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-blob {
+    position: relative;
+    bottom: 40%;
+    border: 15px solid white;
+    background-color: whitesmoke;
+    padding: 40%;
+    border-radius: 100px;
+}
+
+.serviceCard-details {
+    padding: 5%;
+    background-color: rgb(44, 160, 228);
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+}
+
+.serv-icon {
+    transition: all 1s;
+}

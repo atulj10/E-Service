@@ -54,7 +54,7 @@
     overflow: hidden;
     filter: grayscale(100%);
     border-radius: 10px;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
     &:hover{
         flex: 2;
         filter: brightness(100%);

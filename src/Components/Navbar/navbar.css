@@ -9,6 +9,7 @@
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
     text-shadow: 5px 5px 10px rgba(22, 20, 20, 0.836);
+    color: white;
 }
 
 .nav-icon {
@@ -16,10 +17,11 @@
 }
 
 .nav-link {
-    transition: all 0.5s;
+    transition: all 0.5s,color 0.3s;
 
     &:hover {
         padding: 1%;
+        color: white;
         .nav-name {
             opacity: 0;
         }
