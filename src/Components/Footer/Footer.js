@@ -15,15 +15,14 @@ const Footer = () => {
       <div className=' text-center col-lg-4 col-md-6 col-sm-12 d-flex flex-column '>
         <h3 className='mb-5'>Contact</h3>
         <div className='row pr-2'>
-          <div className='col-6 '>
-            <p>+91 6205769890</p>
-            <p>+91 6205769890</p>
+          <div className='footer-contact col-6 '>
+            <p>+918770757305 </p>
+            <p>+917999354633</p>
           </div>
-          <div className='col-6 '>
-            <p>Demo@email.com</p>
-            <p>Demo@email.com</p>
-            <p>Demo@email.com</p>
-            <p>Demo@email.com</p>
+          <div className='footer-contact col-6 '>
+            <p>shashvat@goals4es.com</p>
+            <p>niwariya.ravindra@goals4es.com</p>
+            <p>hr@goals4es.com</p>
           </div>
         </div>
       </div>

@@ -28,6 +28,8 @@
 .company-image {
     width: 5%;
     filter: drop-shadow(10px 10px 4px rgb(59, 59, 59));
+    aspect-ratio: 5/4;
+    object-fit: contain;
 }
 
 

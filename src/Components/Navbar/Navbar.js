@@ -18,8 +18,6 @@ const Navbar = () => {
         }
     }
 
-
-
     return (<>
         <nav className={`navbar navbar-expand-lg d-flex  ${scroll ? "bg-dark  border-body" : " bg-body-outline"} position-fixed w-100 z-1 px-0  `} data-bs-theme={`${scroll && "dark"}`}>
             <div className='position-absolute' style={{left:"10px"}}>

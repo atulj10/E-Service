@@ -14,7 +14,7 @@ const ServiceCard = ({title,description,icon}) => {
             </div>
             <div className='serviceCard-details'>
                 <h2 className='m-4'>{title}</h2>
-                <p>{description.substring(0,`${visible ? 1000 : 250}`)}...</p>
+                <p>{description.substring(0,`${visible && 250}`)}{(!visible) && <h1>.....</h1>}</p>
                 <button className='btn btn-outline-success my-4 w-50 align-self-center' onClick={()=>setVisible(prev=>!prev)}>{visible? "READ LESS ..." : "READ MORE ..."}</button>
             </div>
         </div>

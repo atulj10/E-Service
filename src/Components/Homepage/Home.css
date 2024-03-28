@@ -430,6 +430,7 @@
 
 .carousal-image {
     filter: brightness(40%);
+    aspect-ratio: 5/2;
 }
 
 .carousal-content {
