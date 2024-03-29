@@ -14,10 +14,10 @@ const Card = ({ image, designation, name, email, description }) => {
             <div className='card-detail d-flex flex-column'>
                 <h4>{name}</h4>
                 <h5>{designation}</h5>
-                <p>{description.substring(0, `${visible ? 1000 : 250}`)}...</p>
+                <p>{description.substring(0, `${visible ? 10000 : 250}`)}{!visible && "..."}</p>
                 <hr />
                 <Link style={{ textDecoration: "none", color: "black" }}><FontAwesomeIcon icon={faEnvelope} /> &nbsp;{email}</Link>
-                <button className='btn btn-outline-success my-4 w-50 align-self-center' onClick={()=>setVisible(prev=>!prev)}>{visible? "READ LESS ..." : "READ MORE ..."}</button>
+                <button className='btn btn-success my-4 w-50 align-self-center' onClick={()=>setVisible(prev=>!prev)}>{visible? "READ LESS" : "READ MORE ..."}</button>
             </div>
         </div>
     )

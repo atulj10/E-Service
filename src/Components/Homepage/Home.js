@@ -23,26 +23,34 @@ const Home = () => {
           <img className='label' src={label} alt='label-img' />
           <div className='box text-center'>
             <h3 className='fs-1 mb-5 '>Something that is kinda like a motto</h3>
-            <button className='btn btn-outline-success btn-lg m-3'>Click me</button>
+            {/* <button className='btn btn-success btn-lg m-3'>Click me</button> */}
           </div>
         </div>
         <h1 className='text-center' style={{ textShadow: "10px 10px 10px grey", margin: "10% 0 2% 0" }}>Goals' Engineering Services</h1>
-        <div className='features row m-3 d-flex '>
-          <div className=' image-container col-lg-3 col-md-12 position-relative'>
-            <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+        <div className='features row m-3 d-flex position-relative'>
+          <div className=' image-container col-lg-3 '>
             <img className=" image" src={image1} alt='picture' />
+            <div className='button-container'>
+              <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+            </div>
           </div>
-          <div className=' image-container col-lg-3 col-md-1 position-relative'>
-            <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+          <div className=' image-container col-lg-3 col-md-1 '>
             <img className="image " src={image4} alt='picture' />
+            <div className='button-container'>
+              <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+            </div>
           </div>
-          <div className='image-container image-container col-lg-3 col-md-1 position-relative'>
-            <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+          <div className='image-container image-container col-lg-3 col-md-1 '>
             <img className="image " src={image3} alt='picture' />
+            <div className='button-container'>
+              <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+            </div>
           </div>
-          <div className=' image-container col-lg-3 col-md-12 position-relative'>
-            <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+          <div className=' image-container col-lg-3 col-md-12 '>
             <img className="image " src={image2} alt='picture' />
+            <div className='button-container'>
+              <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+            </div>
           </div>
         </div>
         <div className='line'>
@@ -64,7 +72,7 @@ const Home = () => {
         <div className='project-container ' >
           <h1 className='project-title'>Projects</h1>
           <div id="carouselExampleFade" className="carousel slide carousel-fade">
-            <div className="carousel-inner">
+            <div className="carousel-inner z-0">
               <div className="carousel-item position-relative active">
                 <img src={project1} className="carousal-image d-block w-100 h-100" alt="project-img" />
                 <div className='carousal-content'>

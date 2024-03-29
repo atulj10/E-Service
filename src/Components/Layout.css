@@ -1,0 +1,16 @@
+.whatsapp {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40%;
+    z-index: 10;
+    border: none;
+    width: 3.8%;
+    background-color: green;
+    padding:0.4% 0.8%;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        width: 12%;
+    }
+}

@@ -2,13 +2,14 @@
     padding: 1.5% 0;
     display:flex;
     justify-content: center;
+    z-index: 100;
 }
 
 .active {
     text-decoration: underline;
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
-    text-shadow: 5px 5px 10px #0000ff;
+    text-shadow: 5px 5px 10px #2b2b2c;
     color: white;
 }
 

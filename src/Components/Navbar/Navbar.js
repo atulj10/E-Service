@@ -31,7 +31,7 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse navbar-container " id="navbarTogglerDemo01">
                         <div >
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 z-3">
                                 <li className="nav-item">
                                     <NavLink className='nav-link' to='/' id='home' activeClassName='active'><span className='nav-icon'><FontAwesomeIcon icon={faHome} /></span><span className='nav-name'>Home</span></NavLink>
                                 </li>

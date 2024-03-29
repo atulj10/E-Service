@@ -1,0 +1,41 @@
+.career-label-image {
+    height: auto;
+    object-fit: fill;
+    width: 100%;
+    aspect-ratio: 5/2.3;
+    filter: brightness(70%);
+}
+
+.career-motto {
+    position: absolute;
+    color: white;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.non-technical-job {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 5% 2%;
+}
+
+.technical-job {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 4%;
+    margin: 5% 2%;
+}
