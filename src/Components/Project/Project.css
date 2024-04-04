@@ -42,21 +42,23 @@
 }
 
 .company-flex{
+    text-align: center;
     cursor: pointer;
+    margin:0 10px;
     background: transparent;
     border:2px solid rgb(119, 119, 119);
     color: #112351;
     padding: 2%;
-    width: 50px;
+    width: 100px;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    filter: grayscale(100%);
+    filter: grayscale(100%) ;
     border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease;
     &:hover{
         flex: 2;
         filter: brightness(100%);

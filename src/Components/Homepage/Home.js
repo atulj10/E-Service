@@ -12,6 +12,7 @@ import project1 from '../../Assets/project1.png'
 import project2 from '../../Assets/project2.png'
 import project3 from '../../Assets/project3.png'
 import project4 from '../../Assets/project4.png'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -63,7 +64,7 @@ const Home = () => {
               <p class="text-body">Goals Engineering Services is a well-known non-destructive research (NDR) organization with a long tradition and vast experience in delivering high-quality services leveraging cutting-edge technologies. We are committed to providing Non-Destructive Testing (NDT) services to our customers in a cost-effective, dependable, durable, efficient, and intelligent manner while adhering to statutory and regulatory requirements.
                 Goals engineering services</p>
             </div>
-            <button class="card-button">More info &nbsp; <FontAwesomeIcon icon={faArrowRight} /></button>
+            <Link to='/about'><button class="card-button" >More info &nbsp; <FontAwesomeIcon icon={faArrowRight} /></button></Link>
           </div>
         </div>
         <div className='line'>
@@ -111,7 +112,7 @@ const Home = () => {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <button className='btn btn-outline-success text-center m-5'>Read More  &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button>
+          <Link to='/projects'><button className='btn btn-outline-success text-center m-5'>Read More  &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button></Link>
         </div>
         <div className='line mb-5'>
         </div>
@@ -141,14 +142,14 @@ const Home = () => {
           </div>
           <div className='services-content container text-center'>
             <p className='services-p m-4'>Goals Engineering Services  Specializes In Commercial Construction And NDT Services , But Over The Years We Have Undertaken A Number Of Projects In Industrial And Residential Property Construction. We Are A Flexible Team With Expertise In All Aspects Of Construction Work.</p>
-            <button className='btn btn-success'>More Services &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button>
+            <Link to="/services"><button className='btn btn-success'>More Services &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button></Link>
           </div>
         </div>
         <div className='line mb-5'></div>
         <div className='career mt-5 pt-5 text-center'>
           <h1 className='career-title'>CAREER</h1>
           <p className='career-content'>Goals Engineering Services are always looking for skilled  professionals to join our team. If you think you’d make a good fit, have a look at our open positions, or leave an unsolicited application.</p>
-          <button className='btn btn-success m-4'>See Positions &nbsp; <FontAwesomeIcon icon={faArrowRight} /></button>
+          <Link to='/career'><button className='btn btn-success m-4'>See Positions &nbsp; <FontAwesomeIcon icon={faArrowRight} /></button></Link> 
         </div>
       </div>
     </Layout>

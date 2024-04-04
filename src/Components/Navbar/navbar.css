@@ -1,5 +1,5 @@
 .navbar{
-    padding: 1.5% 0;
+    padding: 2% 0;
     display:flex;
     justify-content: center;
     z-index: 100;
@@ -19,9 +19,10 @@
 
 .nav-link {
     transition: all 0.5s,color 0.3s;
+    padding: 0;
 
     &:hover {
-        padding: 1%;
+        translate: 0 -10px;
         color: white;
         .nav-name {
             opacity: 0;

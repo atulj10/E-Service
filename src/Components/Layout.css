@@ -1,16 +1,30 @@
 .whatsapp {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 40%;
-    z-index: 10;
     border: none;
-    width: 3.8%;
+    width: 35%;
     background-color: green;
-    padding:0.4% 0.8%;
+    padding: 4% 8%;
     overflow-x: hidden;
     transition: all 0.3s ease-in-out;
-    &:hover{
-        width: 12%;
+
+    &:hover {
+        width: 100%;
+    }
+}
+
+.messenger {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 35%;
+    background-color: rgb(39, 126, 240);
+    padding: 4% 8%;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    object-fit: contain;
+
+    &:hover {
+        width: 100%;
     }
 }
