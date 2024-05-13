@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
                 {children}
             </main>
             <div className='footer'>
-                <Footer />
+                {/* <Footer /> */}
             </div>
             <ReactModal
                 isOpen={open}

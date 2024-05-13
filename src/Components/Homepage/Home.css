@@ -507,7 +507,7 @@
     }
 }
 
-@media only screen and (max-width:780px) {
+@media only screen and (max-width:400px) {
     .features {
         padding: 10%;
     }

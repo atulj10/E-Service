@@ -75,7 +75,7 @@
     padding: 0 5%;
 }
 
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:400px) {
     .about-testimonial{
         padding: 5% 0;
     }

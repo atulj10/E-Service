@@ -23,7 +23,7 @@
     padding: 0 13%;
 }
 
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:400px) {
 
     .label-container {
         width:100%;
