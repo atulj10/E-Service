@@ -15,14 +15,14 @@
     backdrop-filter: blur(6px);
 }
 
-.companies{
+.companies {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
     padding: 0.5% 0;
     background-color: rgb(219, 219, 219);
-    filter: grayscale(100%) ;
+    filter: grayscale(100%);
 }
 
 .company-image {
@@ -33,20 +33,20 @@
 }
 
 
-.company-detail{
+.company-detail {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5% 30%;
-    gap:10px;
+    gap: 10px;
 }
 
-.company-flex{
+.company-flex {
     text-align: center;
     cursor: pointer;
-    margin:0 10px;
+    margin: 0 10px;
     background: transparent;
-    border:2px solid rgb(119, 119, 119);
+    border: 2px solid rgb(119, 119, 119);
     color: #112351;
     padding: 2%;
     width: 100px;
@@ -56,22 +56,62 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    filter: grayscale(100%) ;
+    filter: grayscale(100%);
     border-radius: 10px;
     transition: all 0.3s ease;
-    &:hover{
+
+    &:hover {
         flex: 2;
         filter: brightness(100%);
         transform: scale(1.03);
     }
 }
 
-.company-up{
+.company-up {
     position: relative;
     top: 0;
 }
 
-.company-down{
+.company-down {
     position: relative;
     top: 40px;
+}
+
+@media only screen and (max-width:350px) {
+    .companies {
+        padding: 2% 0;
+    }
+
+    .company-detail {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        margin-bottom: 40px;
+    }
+
+    .company-flex {
+        width: 100%;
+        height: 100%;
+        filter: none;
+        padding:2% 0;
+        border-radius: 0;
+        border-bottom: none;
+    }
+
+    .company-flex>img{
+        filter:none !important;
+    }
+    .company-flex>h1{
+        text-shadow: none !important;
+    }
+
+    .company-up {
+        top: 0;
+        left: 0;
+    }
+
+    .company-down {
+        top: 0;
+        left: 0;
+    }
 }

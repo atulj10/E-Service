@@ -37,7 +37,7 @@
     font-family: inherit;
     font-weight: 500;
     color: black;
-    background-color: transparent ;
+    background-color: transparent;
     border: 2px solid green;
     color: green;
 }
@@ -115,7 +115,7 @@
     box-shadow: 5px 5px 20px gray;
 }
 
-.button-container{
+.button-container {
     position: absolute;
     top: 0;
     z-index: 0;
@@ -143,7 +143,7 @@
     transition: all 0.2s;
 }
 
-.animation{
+.animation {
     animation: comein-feature 1.5s ease-in-out;
 }
 
@@ -497,12 +497,77 @@
 ================================================================================================ */
 
 @keyframes comein-feature {
-    0%{
+    0% {
         opacity: 0;
-        top:0;
+        top: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .features {
+        padding: 10%;
+    }
+
+    .image {
+        border-radius: 0px;
+        /* filter: none; */
+        box-shadow: none;
+    }
+
+    .button-container {
+        position: relative;
+        top: -440px;
+        /* z-index: 1; */
+    }
+
+    .readmore {
+        color: #9AC8CD;
+    }
+
+    .arrow {
+        left: 110%;
+    }
+
+    .image-container:hover {
+        .image {
+            transform: none;
+            filter: none;
+            box-shadow: none;
+            filter: none;
+
+        }
+
+        .readmore {
+            transform: none;
+            color: #00e5ff;
+            border-radius: 10px;
+        }
+
+        .arrow {
+            left: 130%;
+        }
+    }
+
+    .card {
+        padding: 4% 5%;
+        &:hover{
+            .text-body{
+                text-shadow: none;
+            }
+            .text-title{
+                text-shadow: none;
+            }
+        }
+    }
+
+    .carousal-content{
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        padding: 3% 10%;
     }
 }

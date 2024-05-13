@@ -39,3 +39,44 @@
     padding: 4%;
     margin: 5% 2%;
 }
+
+@media only screen and (max-width:350px) {
+    .jobs {
+        padding: 0 10%;
+        margin-bottom: 60px;
+    }
+
+    .jobs>h2{
+        margin-top: 40px;
+    }
+
+    .technical-job {
+        padding: 5%;
+        gap: 2px;
+
+        &>h3 {
+            font-size: 1rem;
+        }
+
+        &>h5 {
+            font-size: 0.75rem;
+        }
+    }
+
+    .non-technical-job {
+        padding: 5%;
+        gap: 2px;
+
+        &>h3 {
+            font-size: 1rem;
+        }
+
+        &>h5 {
+            font-size: 0.75rem;
+        }
+    }
+
+    .btn{
+        font-size: 0.5rem;
+    }
+}

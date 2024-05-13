@@ -74,3 +74,19 @@
 {
     padding: 0 5%;
 }
+
+@media only screen and (max-width:350px) {
+    .about-testimonial{
+        padding: 5% 0;
+    }
+    .details-section{
+        margin: 0 10%;
+    }
+
+    .about-card-container{
+        margin-top: 10%;
+    }
+    .box-comment{
+        height: 10%;
+    }
+}

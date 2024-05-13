@@ -1,6 +1,6 @@
-.navbar{
+.navbar {
     padding: 2% 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     z-index: 100;
 }
@@ -18,12 +18,13 @@
 }
 
 .nav-link {
-    transition: all 0.5s,color 0.3s;
+    transition: all 0.5s, color 0.3s;
     padding: 0;
 
     &:hover {
         translate: 0 -10px;
         color: white;
+
         .nav-name {
             opacity: 0;
         }
@@ -40,4 +41,41 @@
 
 .navbar {
     transition: all 0.4s;
+}
+
+@media only screen and (max-width:350px) {
+    .navbar {
+        justify-content: end;
+        padding: 5% 10%;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-toggler {
+        background-color: #76ABAE;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .nav-link {
+        color: black;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .active {
+        text-decoration: none;
+        text-decoration-thickness: none;
+        text-underline-offset: none;
+        text-shadow: none;
+        color: white;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

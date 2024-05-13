@@ -7,19 +7,18 @@ import logo from '../../Assets/Logo.png'
 const Footer = () => {
   return (
     <div className='row footer-container mx-0'>
-      <div className='col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center'>
+      <div className=' col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center'>
         <img className='logo pb-2' src={logo} alt='logo-img'/>
         <h5 style={{color:"#F5DD61"}}>Goal E Services</h5>
       </div>
-
       <div className=' text-center col-lg-4 col-md-6 col-sm-12 d-flex flex-column '>
         <h3 className='mb-5'>Contact</h3>
         <div className='row pr-2'>
-          <div className='footer-contact col-6 '>
+          <div className='footer-contact col-lg-6 '>
             <p>+918770757305 </p>
             <p>+917999354633</p>
           </div>
-          <div className='footer-contact col-6 '>
+          <div className='footer-contact col-lg-6 '>
             <p>shashvat@goals4es.com</p>
             <p>niwariya.ravindra@goals4es.com</p>
             <p>hr@goals4es.com</p>

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ServiceCard = ({title,description,icon}) => {
     const [visible, setVisible] = useState(false)
+    
     return (
         <div className='service-main'>
             <div className='service-icon'  >

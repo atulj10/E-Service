@@ -46,3 +46,9 @@
     border-radius: 10px;
     border: 2px solid black;
 }
+
+@media only screen and (max-width:350px) {
+    .blog-motto>h1{
+        font-size: 2rem !important;
+    }
+}

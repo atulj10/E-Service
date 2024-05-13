@@ -9,8 +9,8 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className='d-flex flex-column' >
-        <div className='position-absolute'>
+      <div className='d-flex flex-column contact-container' >
+        <div className='position-absolute label-container'>
           <img className='contact-label w-100' style={{ filter: "brightness(60%)", transform: "rotate(180deg)" }} src={label} alt='label-img' />
           <div className='contact-motto'>
             <h1>This is the motto to be displayed</h1>
@@ -22,10 +22,10 @@ const Contact = () => {
         </div>
         <div className='line my-5'></div>
         <div className='d-flex flex-column'>
-          <h1 className='text-center m-5 ' style={{ textShadow: "5px 5px 10px grey", fontSize: "3rem" }}>GIVE US A VISIT!</h1>
+          <h1 className='text-center m-5  contact-title' style={{ textShadow: "5px 5px 10px grey", fontSize: "3rem" }}>GIVE US A VISIT!</h1>
           <div className='address row m-5'>
             <div className='col-lg-4 my-4'>
-              <h2 className='text-center my-4 fs-1' style={{ backgroundColor: "" }}>Registered Office:</h2>
+              <h2 className='text-center my-4 fs-1 contact-title' >Registered Office:</h2>
               <p style={{ fontSize: "1.5rem", textAlign: "start", lineHeight: "180%" }}>Ward No. 05, Behind of Aradhana Convent Nursery School Parasia<br />
                 <b>Town :</b>&nbsp; Parasia<br />
                 <b>District :</b>&nbsp; Chhindwara<br />
@@ -33,7 +33,7 @@ const Contact = () => {
                 <b>Pincode :</b>&nbsp; 480441</p>
             </div>
             <div className='col-lg-4 my-4'>
-              <h2 className='text-center my-4 fs-1' style={{ backgroundColor: "" }}>Registered Office:</h2>
+              <h2 className='text-center my-4 fs-1 contact-title' >Registered Office:</h2>
               <p style={{ fontSize: "1.5rem", textAlign: "start", lineHeight: "180%" }}>Panchvally College Road New Parasia Nager Khirsadow <br />
                 <b>Town :</b>&nbsp; Parasia<br />
                 <b>District :</b>&nbsp; Chhindwara<br />
@@ -41,19 +41,19 @@ const Contact = () => {
                 <b>Pincode :</b>&nbsp; 480441</p>
             </div>
           </div>
-          <h1 className='text-center m-5 ' style={{ textShadow: "5px 5px 10px grey", fontSize: "3.5rem" }}>OR MAYBE!</h1>
+          <h1 className='text-center m-5  contact-title' style={{ textShadow: "5px 5px 10px grey", fontSize: "3.5rem" }}>OR MAYBE!</h1>
           <div className='row mb-5'>
-            <div className='col-lg-6 text-center'>
-              <h1 className='text-center m-5 d-flex flex-column' style={{ textShadow: "5px 5px 10px grey", fontSize: "3rem" }}><FontAwesomeIcon icon={faPhone} className='my-3'/>CALL US! </h1>
+            <div className='col-lg-6 px-0 text-center'>
+              <h1 className='text-center m-5 d-flex flex-column contact-title' style={{ textShadow: "5px 5px 10px grey", fontSize: "3rem" }}><FontAwesomeIcon icon={faPhone} className='my-3'/>CALL US! </h1>
               <div className='d-flex justify-content-center'>
-                <h3 className='mx-4 mb-0 align-self-center'>+918770757305 &nbsp; &nbsp; +917999354633</h3>
+                <h3 className='mx-4 numbers  mb-0 align-self-center'>+918770757305 &nbsp; &nbsp; +917999354633</h3>
               </div>
             </div>
-            <div className='col-lg-6 '>
-              <h1 className='text-center m-5 d-flex flex-column' style={{ textShadow: "5px 5px 10px grey", fontSize: "3rem" }}><FontAwesomeIcon icon={faEnvelope} className='my-3' /> WRITE TO US!</h1>
-              <div className='d-flex ' style={{marginLeft:"15%",gap:"5%"}}>
-                <h3 className='my-2 d-flex flex-column text-center'><b className='my-3'>For Enquiry</b> shashvat@goals4es.com <a href='https://docs.google.com/forms/d/e/1FAIpQLScNQ_E4woBylqP8wi-I5VqxqhLwoc441DZVRom4pDSrrK5xFg/viewform'><button className='btn btn-success my-5 w-75'>CLICK FOR MORE <FontAwesomeIcon icon={faArrowRight}/></button></a></h3>
-                <h3 className='my-2 d-flex flex-column text-center'><b className='my-3'>For Career</b> hr@goals4es.com <a href='https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform'><button className='btn btn-success my-5'>CLICK FOR MORE <FontAwesomeIcon icon={faArrowRight}/></button></a></h3>
+            <div className='col-lg-6  px-0'>
+              <h1 className='text-center m-5 d-flex flex-column contact-title' style={{ textShadow: "5px 5px 10px grey", fontSize: "3rem" }}><FontAwesomeIcon icon={faEnvelope} className='my-3' /> WRITE TO US!</h1>
+              <div className='d-flex email ' style={{marginLeft:"15%",gap:"5%"}}>
+                <h3 className='my-2  d-flex flex-column text-center'><b className='my-3'>For Enquiry</b> shashvat@goals4es.com <a href='https://docs.google.com/forms/d/e/1FAIpQLScNQ_E4woBylqP8wi-I5VqxqhLwoc441DZVRom4pDSrrK5xFg/viewform'><button className='btn btn-success my-5 w-75'>CLICK FOR MORE <FontAwesomeIcon icon={faArrowRight}/></button></a></h3>
+                <h3 className='my-2  d-flex flex-column text-center'><b className='my-3'>For Career</b> hr@goals4es.com <a href='https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform'><button className='btn btn-success my-5'>CLICK FOR MORE <FontAwesomeIcon icon={faArrowRight}/></button></a></h3>
               </div>
             </div>
           </div>

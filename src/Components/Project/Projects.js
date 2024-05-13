@@ -42,7 +42,7 @@ const Projects = () => {
             <h1 className="m-5" style={{textShadow:"10px 10px 10px black"}}>Company name</h1>
             <p className='text-center mx-4'>This is dummy text that is to be used inorder to describe about the project </p>
           </div>
-          <div className='company-flex company-down'>
+          <div className='company-flex company-down' style={{borderBottom:"1px solid black"}}>
             <img style={{filter: "drop-shadow(10px 10px 4px rgb(59, 59, 59))",aspectRatio:"5/4",objectFit:"contain"}} src={company4} alt='client-image' />
             <h1 className="m-5" style={{textShadow:"10px 10px 10px black"}}>Company name</h1>
             <p className='text-center mx-4'>This is dummy text that is to be used inorder to describe about the project </p>

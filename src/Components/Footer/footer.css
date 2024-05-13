@@ -1,26 +1,35 @@
-.footer-container{
+.footer-container {
     background-color: black;
-    padding: 2.5%  5% 1% 5%;
+    padding: 2.5% 5% 1% 5%;
     color: white;
 }
 
-.logo{
+.logo {
     height: 120px;
     width: 120px;
 }
 
-.icon{
+.icon {
     cursor: pointer;
-    margin:2% 3%;
+    margin: 2% 3%;
     color: white;
-    &:hover{
+
+    &:hover {
         color: rgb(255, 230, 0);
     }
 }
 
-.footer-contact >p{
+.footer-contact>p {
     cursor: pointer;
-    &:hover{
-        color:rgb(255, 230, 0) ;
+
+    &:hover {
+        color: rgb(255, 230, 0);
     }
+}
+
+@media only screen and (max-width:350px) {
+  .footer-container{
+    
+  }
+
 }

@@ -66,3 +66,23 @@
 .serv-icon {
     transition: all 1s;
 }
+
+@media only screen and (max-width:350px) {
+    .serviceCard-details>h2 {
+        font-size: 1rem;
+    }
+    .serv-icon{
+        height: 40px;
+    }
+    .service-main{
+        height: 50%;
+        margin: 0;
+    }
+    .service-container{
+        width: 100%;
+        /* margin-bottom: 400px; */
+    }
+    .service-details{
+        
+    }
+}

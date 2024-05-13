@@ -28,3 +28,19 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width:350px) {
+    
+    .main {
+        width: fit-content;
+        height: 100%;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /* height: 100%; */
+        width: 100%;
+    }
+    
+}

@@ -1,4 +1,4 @@
-.contact-motto{
+.contact-motto {
     position: absolute;
     top: 0;
     display: flex;
@@ -10,16 +10,69 @@
     color: white;
 }
 
-.map
-{
-   margin-top: 40%;
-   margin-left: 23%;
-   margin-bottom: 5%;
+.map {
+    margin-top: 40%;
+    margin-left: 23%;
+    margin-bottom: 5%;
 }
 
-.address{
+.address {
     display: flex;
     justify-content: space-evenly;
     gap: 10%;
     padding: 0 13%;
+}
+
+@media only screen and (max-width:350px) {
+
+    .label-container {
+        width:100%;
+    }
+
+    .contact-motto>h1 {
+        font-size: medium;
+    }
+
+    .email {
+        flex-direction: column;
+        margin-bottom: 120%;
+    }
+
+    .email>h3 {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        padding: 10% 0;
+    }
+
+    .map {
+        margin-left: 20px;
+    }
+
+    .map>h1 {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .map>iframe {
+        margin-left: 40px;
+    }
+
+    .address {
+        padding: 0;
+    }
+
+    .contact-title {
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        font-size: 0.75rem !important;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
 }

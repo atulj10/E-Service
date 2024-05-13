@@ -31,17 +31,19 @@ const Layout = ({ children }) => {
     Modal.setAppElement(document.getElementById('root'));
 
     return (
-        <div className='d-flex flex-column flex-1 '>
-        {/* <Spinner/> */}
+        <div className='d-flex flex-column flex-1 position-relative'>
+            {/* <Spinner/> */}
             <Navbar />
-            <div className='position-fixed z-3 d-flex flex-column' style={{top:"45%"}}>
-                <a href={`https://wa.me/${process.env.REACT_APP_NUMBER}`} style={{textDecoration:"none"}}><button onClick={() => { console.log(process.env.REACT_APP_NUMBER) }} className='whatsapp'><FontAwesomeIcon icon={faWhatsapp} className='fa-3x text-white' /><span><h5 className='mx-4 text-white'>WHATSAPP US!</h5></span></button></a>
-                <button className='messenger'><FontAwesomeIcon icon={faFacebookMessenger} className='fa-3x text-white'/><h5 className='mx-4 text-white'>CHAT&nbsp;&nbsp;WITH  US!</h5></button>
+            <div className='position-fixed z-3 d-flex flex-column' style={{ top: "45%" }}>
+                <a href={`https://wa.me/${process.env.REACT_APP_NUMBER}`} style={{ textDecoration: "none" }}><button onClick={() => { console.log(process.env.REACT_APP_NUMBER) }} className='whatsapp'><FontAwesomeIcon icon={faWhatsapp} className='fa-3x text-white' /><span><h5 className='mx-4 text-white'>WHATSAPP US!</h5></span></button></a>
+                <button className='messenger'><FontAwesomeIcon icon={faFacebookMessenger} className='fa-3x text-white' /><h5 className='mx-4 text-white'>CHAT&nbsp;&nbsp;WITH  US!</h5></button>
             </div>
-            <main style={{ minHeight: "89.3vh" }}>
+            <main className='main' style={{ minHeight: "89.3vh" }}>
                 {children}
             </main>
-            <Footer className="align-self-end" />
+            <div className='footer'>
+                <Footer />
+            </div>
             <ReactModal
                 isOpen={open}
                 style={customStyles}

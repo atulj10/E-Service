@@ -76,7 +76,7 @@ const Blog = () => {
           <h1 className='text-center' style={{ textShadow: "7px 7px 7px", fontSize: "3rem", margin: "50px" }}>INSTAFEED</h1>
           <InstagramFeedWidget />
         </div>
-        <div className='line mb-5'></div>
+        {/* <div className='line mb-5'></div>
         <div className='updates'>
           <h1 className='text-center' style={{ textShadow: "7px 7px 7px", fontSize: "3rem", margin: "50px" }}>UPDATES</h1>
           <div className='d-flex' style={{backgroundColor: "whitesmoke",margin:"10% 0"}}>
@@ -92,7 +92,7 @@ const Blog = () => {
             </div>
             <button className='control-btn' onClick={handleForward}><FontAwesomeIcon className='fa-3x' icon={faChevronRight}/></button>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

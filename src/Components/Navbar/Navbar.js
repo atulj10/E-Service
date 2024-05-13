@@ -8,6 +8,7 @@ import { faAddressCard, faBriefcase, faHome, faMobile, faPhone, faScrewdriverWre
 const Navbar = () => {
     const [scroll, setScroll] = useState(false);
     window.onscroll = function () { Scroll() };
+    const width=window.innerWidth
     const [active, setActive] = useState("");
 
     function Scroll() {
@@ -20,12 +21,12 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg d-flex ${scroll ? "bg-dark border-body" : "bg-body-outline"} position-fixed w-100 z-1 px-0`} data-bs-theme={`${scroll && "dark"}`}>
-                <div className='position-absolute' style={{ left: "10px" }}>
+            <nav className={`navbar navbar-expand-lg d-flex ${scroll &( width>400) ? "bg-dark border-body" : "bg-body-outline"} position-fixed w-100 z-1 px-0`} data-bs-theme={`${(scroll &&  width) && "dark"}`}>
+                <div className='position-absolute logo d-flex mt-5' style={{ left: "10px" }}>
                     <img src={logo} height={'65px'} alt="logo" />
                     <span className='mx-3' style={{ color: "#F5DD61" }}>Goals Engineering Services </span>
                 </div>
-                <div className="d-flex ">
+                <div className="d-flex flex-column mx-5">
                     <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
