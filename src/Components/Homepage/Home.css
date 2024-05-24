@@ -79,6 +79,7 @@
 .features {
     padding: 0 2%;
     margin: 20% 0;
+    display: flex;
 }
 
 .image-container {

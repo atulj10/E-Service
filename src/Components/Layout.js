@@ -40,10 +40,8 @@ const Layout = ({ children }) => {
             </div>
             <main className='main' style={{ minHeight: "89.3vh" }}>
                 {children}
+                <Footer />
             </main>
-            <div className='footer'>
-                {/* <Footer /> */}
-            </div>
             <ReactModal
                 isOpen={open}
                 style={customStyles}

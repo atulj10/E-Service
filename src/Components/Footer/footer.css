@@ -21,15 +21,11 @@
 
 .footer-contact>p {
     cursor: pointer;
-
     &:hover {
         color: rgb(255, 230, 0);
     }
 }
 
 @media only screen and (max-width:400px) {
-  .footer-container{
-
-  }
 
 }

@@ -29,26 +29,26 @@ const Home = () => {
             </div>
           </div>
           <h1 className='text-center' style={{ textShadow: "10px 10px 10px grey", margin: "10% 0 2% 0" }}>Goals' Engineering Services</h1>
-          <div className='features row m-3 d-flex position-relative'>
-            <div className=' image-container col-lg-3 '>
+          <div className='features row m-3  position-relative'>
+            <div className=' image-container col-lg-3  col-md-6'>
               <img className=" image" src={image1} alt='picture' />
               <div className='button-container'>
                 <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
               </div>
             </div>
-            <div className=' image-container col-lg-3 col-md-1 '>
+            <div className=' image-container col-lg-3 col-md-6 '>
               <img className="image " src={image4} alt='picture' />
               <div className='button-container'>
                 <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
               </div>
             </div>
-            <div className='image-container image-container col-lg-3 col-md-1 '>
+            <div className='image-container image-container col-lg-3 col-md-6 '>
               <img className="image " src={image3} alt='picture' />
               <div className='button-container'>
                 <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
               </div>
             </div>
-            <div className=' image-container col-lg-3 col-md-12 '>
+            <div className=' image-container col-lg-3 col-md-6 '>
               <img className="image " src={image2} alt='picture' />
               <div className='button-container'>
                 <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
