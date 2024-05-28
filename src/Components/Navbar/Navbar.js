@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg d-flex ${scroll &( width>400) ? "bg-dark border-body" : "bg-body-outline"} position-fixed w-100 z-1 px-0`} data-bs-theme={`${(scroll &&  width) && "dark"}`}>
+            <nav className={`navbar navbar-expand-lg d-flex  ${scroll  ? "bg-dark border-body" : "bg-body-outline"} position-fixed w-100 z-1 px-0`} data-bs-theme={`${(scroll &&  width) && "dark"}`}>
                 <div className='position-absolute logo d-flex mt-5' style={{ left: "10px" }}>
                     <img src={logo} height={'65px'} alt="logo" />
                     <span className='mx-3' style={{ color: "#F5DD61" }}>Goals Engineering Services </span>

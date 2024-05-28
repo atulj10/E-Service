@@ -43,11 +43,11 @@
     transition: all 0.4s;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
     .navbar {
         justify-content: end;
         padding: 5% 10%;
-        backdrop-filter: blur(10px);
+        background-color: #212529;
     }
 
     .navbar-toggler {
@@ -57,7 +57,7 @@
     }
 
     .nav-link {
-        color: black;
+        color: white;
     }
 
     .nav-icon {
@@ -69,7 +69,6 @@
         text-decoration-thickness: none;
         text-underline-offset: none;
         text-shadow: none;
-        color: white;
     }
 
     .navbar-nav {
@@ -77,5 +76,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 }

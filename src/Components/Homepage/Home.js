@@ -17,14 +17,16 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 
+  const width=window.innerWidth;
+
   return (
     <Layout >
       <div className='home-container'>
         <div className='d-flex flex-column'>
           <div className='label-container position-relative'>
-            <img className='label' src={label} alt='label-img' />
+            <img className='label'  src={label} alt='label-img' />
             <div className='box text-center'>
-              <h3 className='fs-1 mb-5 '>Something that is kinda like a motto</h3>
+              <h3 className={`fs-1 mb-5 `}>Something that is kinda like a motto</h3>
               {/* <button className='btn btn-success btn-lg m-3'>Click me</button> */}
             </div>
           </div>
