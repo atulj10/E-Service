@@ -1,6 +1,7 @@
 *{
     scrollbar-width: none;
     font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,4 +10,8 @@ body{
 
 h1{
     font-family: "Montserrat",sans-serif;
+}
+
+html {
+    overflow-y: scroll; /* Ensures scrollbar is always present */
 }
