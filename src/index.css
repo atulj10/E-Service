@@ -11,6 +11,3 @@ h1{
     font-family: "Montserrat",sans-serif;
 }
 
-html {
-    overflow-y: scroll; /* Ensures scrollbar is always present */
-}
