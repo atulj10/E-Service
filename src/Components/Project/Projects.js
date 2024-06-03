@@ -10,11 +10,11 @@ import company4 from '../../Assets/client-4.png'
 const Projects = () => {
   return (
     <Layout>
-      <div className='label-container position-relative'>
+      <div className='project-container position-relative'>
         <div className='label'>
           <img className='label-image' src={label} />
           <div className='project-slogan'>
-            <h1>Slogan</h1>
+            <h1>"Showcasing Innovation in Every Project"</h1>
           </div>
         </div>
         <div className='companies d-flex flex-column my-5'>
@@ -26,7 +26,7 @@ const Projects = () => {
             <img className='company-image' src={company4} alt='client-img' />
           </div>
         </div>
-        <div className='company-detail'>
+        <div className='company-detail' id='clients'>
           <div className='company-flex company-up'>
             <img style={{filter: "drop-shadow(10px 10px 4px rgb(59, 59, 59))"}} src={company1} alt='client-image' />
             <h1 className="m-5" style={{textShadow:"10px 10px 10px black"}}>Company name</h1>

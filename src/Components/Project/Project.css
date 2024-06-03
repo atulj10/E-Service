@@ -1,12 +1,19 @@
 .label-image {
     filter: brightness(300%);
-    width: 100%;
+    width:100%;
+}
+
+
+.project-container{
+    margin: 0;
+    padding: 0;
 }
 
 .project-slogan {
     position: absolute;
     top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -77,9 +84,19 @@
     top: 40px;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
+    .project-container{
+        width: fit-content;
+    }
+    .label{
+        padding: 5% 0;
+    }
     .companies {
-        padding: 2% 0;
+        padding: 2% 5%;
+    }
+    .project-slogan>h1{
+        font-size: 1rem;
+        color:white;
     }
 
     .company-detail {

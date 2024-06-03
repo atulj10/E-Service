@@ -21,7 +21,7 @@ const About = () => {
   return (
     <Layout>
       <div className='about-container'>
-        <div className='position-relative'>
+        <div className='about-label-container position-relative'>
           <img className='about-label' src={label} alt='label-img' width={"100%"} />
           <div className='about-testimonial d-flex flex-column justify-content-center'>
             <div className='d-flex flex-column p-3' style={{ backdropFilter: "blur(100px)" }}>
@@ -30,12 +30,12 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='line mb-5'></div>
+        {/* <div className='line mb-5'></div> */}
         <div className='details-section'>
           <h1 className='text-center p-5' style={{ textShadow: "5px 5px 5px grey" }}>WHO ARE WE !?</h1>
           <div className='detail-main-section '>
             <div className='d-flex align-items-baseline'>
-              <div className='box-comment arrow-right' style={{ height: `${box1 ? "" : "100px"}` }}>
+              <div className='box-comment arrow-right' style={{ height: `${box1 ? "" : "90px"}`}}>
                 <h2 style={{ paddingBottom: "20px" }}>Overview</h2>
                 <p>dummt textGoals Engineering Services is a well-known non-destructive research organization with a long tradition and vast experience in delivering high-quality services leveraging cutting-edge technologies. We are committed to providing Non-Destructive Testing (NDT) services in Dist: Chhindwara Madhya Pradesh  and kutch Dist: Gujarat to our customers in a cost-effective, dependable, durable, efficient, and intelligent manner while adhering to statutory and regulatory requirements.</p>
               </div>
@@ -43,13 +43,13 @@ const About = () => {
             </div>
             <div className='d-flex align-items-baseline'>
               <button className=' btn btn-dark rounded-5 p-2 px-4' style={{ border: "2px solid black" }} onClick={() => setbox2(prev => !prev)}><FontAwesomeIcon icon={box2 ? faAngleUp : faAngleDown} /></button>
-              <div className='box-comment arrow-left' style={{ height: `${box2 ? "" : "100px"}` }}>
+              <div className='box-comment arrow-left' style={{ height: `${box2 ? "" : "90px"}` }}>
                 <h2 style={{ paddingBottom: "20px" }}>History</h2>
                 <p>Goals Engineering Services In Chhindwara Madhya Pradesh Our Skilled Trainers, NDT Technicians, And Consultants Have Over 10 Years Of Industrial Experience In Precision, Heavy Engineering, Piping, Boilers, Pressure Vessels, Casting, Forging, Defense, And Aerospace Components.</p>
               </div>
             </div>
             <div className='d-flex align-items-baseline'>
-              <div className='box-comment arrow-right' style={{ height: `${box3 ? "" : "100px"}` }}>
+              <div className='box-comment arrow-right' style={{ height: `${box3 ? "" : "90px"}` }}>
                 <h2 style={{ paddingBottom: "20px" }}>Vision</h2>
                 <p>Goals Engineering Services Chhindwara (Mp) Is The Best NDT Provider And Training Centre In India, We Are Expanding Our Fields. Giving Product And Technical Service To Businesses By Concentrating On Customer Engagement, Enhancing Client Retention By Offering Top-Tier Management, And Becoming A Leader In The Industry By Providing Excellence In Planning Diploma, Therapy, And Each NDT Solution.</p>
               </div>
@@ -57,7 +57,7 @@ const About = () => {
             </div>
             <div className='d-flex align-items-baseline'>
               <button className=' btn btn-dark rounded-5 p-2 px-4 ' style={{ border: "2px solid black" }} onClick={() => setbox4(prev => !prev)}><FontAwesomeIcon icon={box4 ? faAngleUp : faAngleDown} /></button>
-              <div className='box-comment arrow-left' style={{ height: `${box4 ? "" : "100px"}` }}>
+              <div className='box-comment arrow-left' style={{ height: `${box4 ? "" : "90px"}` }}>
                 <h2 style={{ paddingBottom: "20px" }}>Mission</h2>
                 <p>To Provide High-Quality NDT Administration Madhya Pradesh Dist :Chhindwara  Solutions, And Preparation While Retaining Professional Competence And Adaptability Through The Use Of Advanced Tools. </p>
               </div>
@@ -84,7 +84,7 @@ const About = () => {
             <div className='col-lg-6'>
               <Card image={image2} name="Mr. Shashvat Kumar Malviya" designation="Co-founder" email="shashvat@goals4es.com" description="A result oriented professional with 10 years of experience in Quality & Project. and HSE department. Seeking assignment in medium or big scale organization preferably in Power Plant a industry . To obtain a challenging and responsible position in an organization where my knowledge, experience, achievements and personal skills will be utilized to be a successful professional while being flexible, creative and resourceful." />
             </div>
-            <div className='col-lg-6'>
+            {/* <div className='col-lg-6'>
               <Card image={image3} name="Mr. Rajesh Kumar Shukla" designation="Welding Specialist" email="rajeshshukla@goals4es.com" description="Proactive, result focused Welding engineer/Welding Inspector with 25 years of working experience within the Manufacturing Industry / Pipe manufacturing for use of OIL & GAS PIPE LINE/OIL & GAS Refineries, holding Bachelor of Mechanical Engineering & CSWIP 3.1 Level II having Excellence in welding/quality management, Team management, Client relationship & communications, root Cause analysis, preparation of progress reports.  Successfully completed CSWIP 3.1- Welding Inspector-Level 2 course from TWI, UK (Certificate no-80499/2, Valid till 10/10/2023). Successfully completed Non-Destructive Testing Level-II course in Ultrasonic testing, Radiographic testing, Visual Testing and Magnetic particle testing (UT, RT, DPT, and MPT) as per ASNT recommended practice SNT-TC-1A." />
             </div>
             <div className='col-lg-6'>
@@ -92,7 +92,7 @@ const About = () => {
             </div>
             <div className='col-lg-6'>
               <Card image={image5} name="Mr. SACHIN SONI" designation=" (Sr. Inspection Engineer) / (Welding Trainer)" email="sachinsoni@goals4es.com" description="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

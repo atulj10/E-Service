@@ -13,12 +13,12 @@ const Services = () => {
           <div className='servce-label position-relative'>
             <img src={label} width={"100%"} style={{ filter: "brightness(90%)" }} />
             <div className='service-slogan'>
-              <h1>Motto</h1>
+              <h1>" Precision Engineering, Unmatched Expertise "</h1>
             </div>
           </div>
         </div>
         <div className='service-details'>
-          <h1 className='text-center my-5'>WE PROVIDE</h1>
+          <h1 className='text-center my-5 py-3'>WE PROVIDE</h1>
           <div className='row service-blocks'>
             <div className='col-lg-6 text-center '>
               <ServiceCard title="NDT Services And Inspection Services " description="NDT Services Provides Non-Destructive Testing (NDT) Service Chhindwara Madhya pradesh  to Engineering Industries and presenting with the most elevated Precision and Quality. We are additionally giving NDT Consultation, Training, and Certification in the accompanying techniques:

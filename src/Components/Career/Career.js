@@ -9,26 +9,18 @@ import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons'
 const Career = () => {
 
   const data_non_technical = [
-    { title: "CIVIL ENGINEER", location: "Betul and Hoshangabad", education: "BE/B.Tech", exprience: "0-1 year", posts: "5", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "Unskilled labor", location: "Betul and Hoshangabad", education: "", exprience: "", posts: "20", enquiry: true, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "Skilled Inspection Engineer", location: "Anjar (Gujarat )", education: "BE/B.Tech/Diploma/graduate", exprience: "0-1 year", posts: "10", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "Mechanical inspection Engineer", location: " Gujarat / Maharashtra (Mumbai)", education: "B.Tech/BE (Mechanical), Nace level - I & II / B gas (for coating),CSWIP 3.1&3.2 ", exprience: "Fabrication field ,Inspection field (Line pipe and Coating, Pressure Vessels, Heat Exchanger, Column Structures ,Rotary parts, Beams.", posts: "10", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" }
-  ]
+    { title: "Fitter", location: "", education: "", exprience: "", posts: "10", enquiry: true, link: "https://docs.google.com/forms/d/e/1FAIpQLSc9B_nK3sUbsUV0lf4vM7bSw9ONjHJG59gfBAcxAuX0I-HjAg/viewform" },
+    ]
 
-  const data_technical = [
-    { title: "Development Trainee", skilled: "PHP (Laravel / CodeIgniter), JavaScript, MYSQL, LINUX OS", desiredSkills: " Angular, JAVA, Node JS", posts: "5", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "Development Trainee", skilled: "Full Stack JAVA Developer MYSQL, HTML, CSS, JavaScript", desiredSkills: " Angular, PHP, Node JS, REST", posts: "4", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "DB Admin", skilled: "MY SQL, Oracle / AWS / Azure / Google Cloud, LINUX OS, Windows OS", desiredSkills: " PostgreSQL / MongoDB, GitHub, JavaScript", posts: "2", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "Linux Admin", skilled: "MY SQL, LINUX OS, SVN, GitHub, SSH, SSL, Win SCP, DNS, HTTP", desiredSkills: " Oracle / AWS / Azure /Google Cloud", posts: "2", enquiry: true, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" },
-    { title: "Testing", skilled: "FMY SQL, JAVA, JMeter, HTML, WebDriver", desiredSkills: " Oracle / AWS, Selenium", posts: "2", enquiry: false, link: "https://docs.google.com/forms/d/e/1FAIpQLSfkji8E44YK6ln6jtv14OkamE-yMqCOEGZMj2z_qON3wvUO1w/viewform" }
-  ]
+  const data_technical = []
   return (
     <Layout>
       <div className='career-container'>
         <div className='career-label position-relative' style={{ marginBottom: "5%" }}>
           <img className='career-label-image' src={label} />
           <div className='career-motto'>
-            <h1>Something</h1>
+            <h1>
+              " We Don't offer a job. We Offer a Career "</h1>
           </div>
         </div>
         <div className='jobs'>
@@ -38,12 +30,12 @@ const Career = () => {
             {data_non_technical.map((i) => (
               <div className=' non-technical-job text-center col-lg-3'>
                 <h3 className='align-self-center mb-4'><b>{i.title.toUpperCase()}</b></h3>
-                <h5><FontAwesomeIcon icon={faLocationDot} />&nbsp;&nbsp;&nbsp;{i.location}</h5>
-                <h5><FontAwesomeIcon icon={faLandmarkDome} />&nbsp;&nbsp;&nbsp;{i.education}</h5>
-                <h5><FontAwesomeIcon icon={faCalendarCheck} />&nbsp;&nbsp;&nbsp;{i.exprience}</h5>
+                <h5><FontAwesomeIcon icon={faLocationDot} />&nbsp;&nbsp;&nbsp;{i.location ? i.location:"--"}</h5>
+                <h5><FontAwesomeIcon icon={faLandmarkDome} />&nbsp;&nbsp;&nbsp;{i.education?i.education:"--"}</h5>
+                <h5><FontAwesomeIcon icon={faCalendarCheck} />&nbsp;&nbsp;&nbsp;{i.exprience ? i.exprience :"--"}</h5>
                 <h5><b>POSTS</b> : {i.posts}</h5>
                 <h5><b>ENQUIRY</b> : &nbsp;{(i.enquiry) ? <FontAwesomeIcon icon={faCheck} className='text-success' /> : <FontAwesomeIcon icon={faXmark} className='text-danger' />}</h5>
-                {((i.enquiry) && (<button className='btn btn-success align-self-center my-3'>ENQUIRY<FontAwesomeIcon className='mx-3' icon={faArrowRight} /></button>))}
+                {((i.enquiry) && (<button className='btn btn-success align-self-center my-3'>LINK<FontAwesomeIcon className='mx-3' icon={faArrowRight} /></button>))}
               </div>))}
           </div>
           <h2 className='text-center'>TECHNICAL JOBS</h2>
@@ -56,9 +48,12 @@ const Career = () => {
                   <h5><FontAwesomeIcon icon={faDesktop} />&nbsp;&nbsp;&nbsp;{i.desiredSkills}</h5>
                   <h5><b>POSTS</b> : {i.posts}</h5>
                   <h5><b>ENQUIRY</b> : &nbsp;{(i.enquiry) ? <FontAwesomeIcon icon={faCheck} className='text-success' /> : <FontAwesomeIcon icon={faXmark} className='text-danger' />}</h5>
-                  {((i.enquiry) && (<button className='btn btn-success align-self-center my-3'>ENQUIRY<FontAwesomeIcon className='mx-3' icon={faArrowRight} /></button>))}
+                  {((i.enquiry) && (<button className='btn btn-success align-self-center my-3'>LINK<FontAwesomeIcon className='mx-3' icon={faArrowRight} /></button>))}
                 </div>)
             })}
+            {
+              data_technical.length==0 && <h1 className='text-center my-5 mx-0 p-0'>We are sorry to say! No jobs for Techincal Positions  </h1>
+            }
           </div>
         </div>
       </div>

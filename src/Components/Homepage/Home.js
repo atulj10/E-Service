@@ -17,44 +17,52 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-  const width=window.innerWidth;
+  const width = window.innerWidth;
 
   return (
     <Layout >
       <div className='home-container'>
         <div className='d-flex flex-column'>
           <div className='label-container position-relative'>
-            <img className='label'  src={label} alt='label-img' />
+            <img className='label' src={label} alt='label-img' />
             <div className='box text-center'>
-              <h3 className={`fs-1 mb-5 `}>Something that is kinda like a motto</h3>
+              <h3 className={`fs-1 mb-5 `}>" Empowering Businesses with World-Class Talent  {width > 400 && <> <br /> <br /></>} for Peak Performance "</h3>
               {/* <button className='btn btn-success btn-lg m-3'>Click me</button> */}
             </div>
           </div>
           <h1 className='text-center' style={{ textShadow: "10px 10px 10px grey", margin: "10% 0 2% 0" }}>Goals' Engineering Services</h1>
           <div className='features row m-3  position-relative'>
             <div className=' image-container col-lg-3  col-md-6'>
-              <img className=" image" src={image1} alt='picture' />
-              <div className='button-container'>
-                <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
-              </div>
+              <Link to='/services'>
+                <img className=" image" src={image1} alt='picture' />
+                <div className='button-container'>
+                  <button className='readmore '>Explore<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+                </div>
+              </Link>
             </div>
             <div className=' image-container col-lg-3 col-md-6 '>
-              <img className="image " src={image4} alt='picture' />
-              <div className='button-container'>
-                <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
-              </div>
+              <Link to='/services'>
+                <img className="image " src={image4} alt='picture' />
+                <div className='button-container'>
+                  <button className='readmore '>Explore<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+                </div>
+              </Link>
             </div>
             <div className='image-container image-container col-lg-3 col-md-6 '>
-              <img className="image " src={image3} alt='picture' />
-              <div className='button-container'>
-                <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
-              </div>
+              <Link to='/services'>
+                <img className="image " src={image3} alt='picture' />
+                <div className='button-container'>
+                  <button className='readmore '>Explore<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+                </div>
+              </Link>
             </div>
             <div className=' image-container col-lg-3 col-md-6 '>
-              <img className="image " src={image2} alt='picture' />
-              <div className='button-container'>
-                <button className='readmore '>Go somehwere<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
-              </div>
+              <Link to='/services'>
+                <img className="image " src={image2} alt='picture' />
+                <div className='button-container'>
+                  <button className='readmore '>Explore<FontAwesomeIcon className='arrow' icon={faArrowRight} /></button>
+                </div>
+              </Link>
             </div>
           </div>
           <div className='line'>
@@ -79,31 +87,31 @@ const Home = () => {
               <div className="carousel-inner z-0">
                 <div className="carousel-item position-relative active">
                   <img src={project1} className="carousal-image d-block w-100 h-100" alt="project-img" />
-                  <div className='carousal-content'>
+                  {/* <div className='carousal-content'>
                     <h1>Some  Title 1</h1>
                     <p> Some Contents 1</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="carousel-item position-relative">
                   <img src={project2} className="carousal-image d-block w-100 h-100" alt="project-img" />
-                  <div className='carousal-content'>
+                  {/* <div className='carousal-content'>
                     <h1>Some  Title 2</h1>
                     <p> Some Contents 2</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="carousel-item position-relative">
                   <img src={project3} className="carousal-image d-block w-100 h-100" alt="project-img" />
-                  <div className='carousal-content'>
+                  {/* <div className='carousal-content'>
                     <h1>Some  Title 3</h1>
                     <p> Some Contents 3</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="carousel-item position-relative">
                   <img src={project4} className="carousal-image d-block w-100 h-100" alt="project-img" />
-                  <div className='carousal-content'>
+                  {/* <div className='carousal-content'>
                     <h1>Some  Title 4</h1>
                     <p> Some Contents 4</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

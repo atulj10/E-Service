@@ -12,8 +12,11 @@
 
 .map {
     margin-top: 40%;
-    margin-left: 23%;
     margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
 }
 
 .address {
@@ -23,10 +26,14 @@
     padding: 0 13%;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
+
+    .contact-container {
+        width: fit-content;
+    }
 
     .label-container {
-        width:100%;
+        width: 100%;
     }
 
     .contact-motto>h1 {
@@ -35,7 +42,6 @@
 
     .email {
         flex-direction: column;
-        margin-bottom: 120%;
     }
 
     .email>h3 {
@@ -46,17 +52,14 @@
         padding: 10% 0;
     }
 
-    .map {
-        margin-left: 20px;
-    }
-
     .map>h1 {
         font-size: 1.5rem !important;
         text-align: center;
     }
 
     .map>iframe {
-        margin-left: 40px;
+        /* margin-left: 0px; */
+        text-align: center;
     }
 
     .address {

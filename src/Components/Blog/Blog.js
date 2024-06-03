@@ -69,7 +69,7 @@ const Blog = () => {
         <div className='blog-label-container position-relative'>
           <img className='blog-label-img' src={label} alt='blog-label' />
           <div className='blog-motto'>
-            <h1 style={{ fontSize: "4rem" }}>The motto</h1>
+            <h1 style={{ fontSize: "4rem" }}>"Engineering Tomorrow, Today"</h1>
           </div>
         </div>
         <div className='instaFeed'>

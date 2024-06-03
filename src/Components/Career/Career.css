@@ -40,13 +40,13 @@
     margin: 5% 2%;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
     .jobs {
         padding: 0 10%;
         margin-bottom: 60px;
     }
 
-    .jobs>h2{
+    .jobs>h2 {
         margin-top: 40px;
     }
 
@@ -55,11 +55,11 @@
         gap: 2px;
 
         &>h3 {
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
 
         &>h5 {
-            font-size: 0.75rem;
+            font-size: 1rem;
         }
     }
 
@@ -68,15 +68,15 @@
         gap: 2px;
 
         &>h3 {
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
 
         &>h5 {
-            font-size: 0.75rem;
+            font-size: 1rem;
         }
     }
 
-    .btn{
+    .btn {
         font-size: 0.5rem;
     }
 }
