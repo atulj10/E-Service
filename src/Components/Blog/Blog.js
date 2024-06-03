@@ -65,7 +65,7 @@ const Blog = () => {
 
   return (
     <Layout>
-      <div className='d-flex flex-column'>
+      <div className=' blog-container d-flex flex-column'>
         <div className='blog-label-container position-relative'>
           <img className='blog-label-img' src={label} alt='blog-label' />
           <div className='blog-motto'>

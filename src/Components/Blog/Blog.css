@@ -1,11 +1,11 @@
-.blog-label-img{
+.blog-label-img {
     height: auto;
     object-fit: fill;
     width: 100%;
     aspect-ratio: 5/2.3;
 }
 
-.blog-motto{
+.blog-motto {
     position: absolute;
     top: 0;
     display: flex;
@@ -16,12 +16,12 @@
     backdrop-filter: blur(2px);
 }
 
-.instaFeed{
+.instaFeed {
     padding: 3%;
     z-index: 0;
 }
 
-.control-btn{
+.control-btn {
     background: transparent;
     border: none;
     padding: 2%;
@@ -31,24 +31,28 @@
 /* =========================================================================================
 ========================================================================================= */
 
-.update-container{
+.update-container {
     border: 2px solid black;
     margin: 10%;
     padding: 5%;
     border-radius: 10px;
-    box-shadow: 10px 10px  black;
+    box-shadow: 10px 10px black;
 }
 
-.update-image{
-    margin:5% 0;
+.update-image {
+    margin: 5% 0;
     object-fit: contain;
     width: 100%;
     border-radius: 10px;
     border: 2px solid black;
 }
 
-@media only screen and (max-width:600px) {
-    .blog-motto>h1{
+@media only screen and (max-width:768px) {
+    .blog-container {
+        width: fit-content;
+    }
+
+    .blog-motto>h1 {
         font-size: 2rem !important;
     }
 }

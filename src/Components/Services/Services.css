@@ -67,7 +67,7 @@
     transition: all 1s;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
     .service-slogan>h1{
         font-size: 1.5rem;
     }
