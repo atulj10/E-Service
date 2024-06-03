@@ -40,7 +40,10 @@
     margin: 5% 2%;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
+    .career-motto>h1{
+        font-size: 1.5rem;
+    }
     .jobs {
         padding: 0 10%;
         margin-bottom: 60px;

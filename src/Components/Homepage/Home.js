@@ -26,7 +26,7 @@ const Home = () => {
           <div className='label-container position-relative'>
             <img className='label' src={label} alt='label-img' />
             <div className='box text-center'>
-              <h3 className={`fs-1 mb-5 `}>" Empowering Businesses with World-Class Talent  {width > 400 && <> <br /> <br /></>} for Peak Performance "</h3>
+              <h3 className={`fs-1 mb-5 `}>" Empowering Businesses with World-Class Talent  {width > 600 && <> <br /> <br /></>} for Peak Performance "</h3>
               {/* <button className='btn btn-success btn-lg m-3'>Click me</button> */}
             </div>
           </div>

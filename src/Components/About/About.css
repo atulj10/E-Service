@@ -76,7 +76,7 @@
     padding: 0 5%;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
     .about-container{
         overflow: hidden;
     }
