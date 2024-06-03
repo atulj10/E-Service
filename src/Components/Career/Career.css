@@ -1,6 +1,6 @@
 .career-label-image {
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
     aspect-ratio: 5/2.3;
     filter: brightness(70%);
@@ -42,12 +42,14 @@
 
 @media only screen and (max-width:768px) {
     .career-container{
-        width: fit-content;
+        width:100%;
     }
     .career-motto>h1{
-        font-size: 1.5rem;
+        padding-top: 12%;
+        font-size: 1rem;
     }
     .jobs {
+        width: fit-content;
         padding: 0 10%;
         margin-bottom: 60px;
     }

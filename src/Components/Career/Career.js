@@ -7,6 +7,7 @@ import { faArrowRight, faCheck, faCross, faDesktop, faLandmarkDome, faLaptopFile
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons'
 
 const Career = () => {
+  const width=window.innerWidth
 
   const data_non_technical = [
     { title: "Fitter", location: "", education: "", exprience: "", posts: "10", enquiry: true, link: "https://docs.google.com/forms/d/e/1FAIpQLSc9B_nK3sUbsUV0lf4vM7bSw9ONjHJG59gfBAcxAuX0I-HjAg/viewform" },

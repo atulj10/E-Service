@@ -11,7 +11,7 @@ const Contact = () => {
     <Layout>
       <div className='d-flex flex-column contact-container' >
         <div className='position-absolute label-container'>
-          <img className='contact-label w-100' style={{ filter: "brightness(60%)", transform: "rotate(180deg)" }} src={label} alt='label-img' />
+          <img className='contact-label ' style={{ width:"100vw",filter: "brightness(60%)", transform: "rotate(180deg)" }} src={label} alt='label-img' />
           <div className='contact-motto'>
             <h1>" Connecting You to Innovation "</h1>
           </div>
