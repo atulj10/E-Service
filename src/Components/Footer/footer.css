@@ -27,6 +27,14 @@
     }
 }
 
+.email-link{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: rgb(255, 230, 0);
+    }
+}
+
 @media only screen and (max-width:400px) {
 
 }

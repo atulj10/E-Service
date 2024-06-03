@@ -21,18 +21,18 @@ const Footer = () => {
             <p>+917999354633</p>
           </div>
           <div className='footer-contact col-lg-6 '>
-            <p>shashvat@goals4es.com</p>
-            <p>niwariya.ravindra@goals4es.com</p>
-            <p>hr@goals4es.com</p>
+            <a className='email-link' href='mailto:shashvat@goals4es.com'><p>shashvat@goals4es.com</p></a>
+            <a className='email-link' href='mailto:niwariya.ravindra@goals4es.com'><p>niwariya.ravindra@goals4es.com</p></a>
+            <a className='email-link' href='mailto:hr@goals4es.com'><p>hr@goals4es.com</p></a>
           </div>
         </div>
       </div>
       <div className='text-center col-lg-4 col-md-6 col-sm-12 d-flex flex-column '>
         <h3 className='mb-5'>Follow Us</h3>
         <div>
-          <FontAwesomeIcon icon={faInstagram} className='fa-2x icon' />
-          <FontAwesomeIcon icon={faFacebook} className='fa-2x icon' />
-          <FontAwesomeIcon icon={faTwitter} className='fa-2x icon' />
+          <a  href='https://www.facebook.com/goals4es'><FontAwesomeIcon icon={faInstagram} className='fa-2x icon' /></a>
+          <a href='https://www.instagram.com/goals4es/'><FontAwesomeIcon icon={faFacebook} className='fa-2x icon' /></a>
+          <a><FontAwesomeIcon icon={faTwitter} className='fa-2x icon' /></a>
         </div>
       </div>
     </div>
